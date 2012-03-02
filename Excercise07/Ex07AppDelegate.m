@@ -7,13 +7,19 @@
 //
 
 #import "Ex07AppDelegate.h"
+#import "ParentUIViewController.h"
 
 @implementation Ex07AppDelegate
 
 @synthesize window = _window;
 
+UINavigationController *nc;
+
+
+
 - (void)dealloc
 {
+    [nc release];
     [_window release];
     [super dealloc];
 }
@@ -23,7 +29,22 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    nc = [[UINavigationController alloc] init];
+    
+    ParentUIViewController *parentViewController = [[ParentUIViewController alloc] initWithNibName:@"ParentUIViewController" bundle:nil];
+    
+    parentViewController.title = @"Parent View";
+    
+    [nc pushViewController:parentViewController animated:NO];
+
+    [parentViewController release];
+    
+    [self.window addSubview:nc.view];
+    
     [self.window makeKeyAndVisible];
+    
+        
     return YES;
 }
 

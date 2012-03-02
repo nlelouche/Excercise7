@@ -13,6 +13,10 @@
 		EACBC3571501190100A42720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EACBC3551501190100A42720 /* InfoPlist.strings */; };
 		EACBC3591501190100A42720 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EACBC3581501190100A42720 /* main.m */; };
 		EACBC35D1501190100A42720 /* Ex07AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EACBC35C1501190100A42720 /* Ex07AppDelegate.m */; };
+		EACBC3661501193100A42720 /* ParentUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACBC3641501193100A42720 /* ParentUIViewController.m */; };
+		EACBC3671501193100A42720 /* ParentUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EACBC3651501193100A42720 /* ParentUIViewController.xib */; };
+		EACBC3731501376000A42720 /* ChildUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACBC3711501376000A42720 /* ChildUIViewController.m */; };
+		EACBC3741501376000A42720 /* ChildUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EACBC3721501376000A42720 /* ChildUIViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,18 @@
 		EACBC34C1501190100A42720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EACBC34E1501190100A42720 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EACBC3501501190100A42720 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EACBC3541501190100A42720 /* Excercise07-Info.plist */ = {isa = PBXFileReference; path = "Excercise07-Info.plist"; sourceTree = "<group>"; };
+		EACBC3541501190100A42720 /* Excercise07-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Excercise07-Info.plist"; sourceTree = "<group>"; };
 		EACBC3561501190100A42720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EACBC3581501190100A42720 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EACBC35A1501190100A42720 /* Excercise07-Prefix.pch */ = {isa = PBXFileReference; path = "Excercise07-Prefix.pch"; sourceTree = "<group>"; };
-		EACBC35B1501190100A42720 /* Ex07AppDelegate.h */ = {isa = PBXFileReference; path = Ex07AppDelegate.h; sourceTree = "<group>"; };
+		EACBC35A1501190100A42720 /* Excercise07-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Excercise07-Prefix.pch"; sourceTree = "<group>"; };
+		EACBC35B1501190100A42720 /* Ex07AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ex07AppDelegate.h; sourceTree = "<group>"; };
 		EACBC35C1501190100A42720 /* Ex07AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ex07AppDelegate.m; sourceTree = "<group>"; };
+		EACBC3631501193100A42720 /* ParentUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentUIViewController.h; sourceTree = "<group>"; };
+		EACBC3641501193100A42720 /* ParentUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentUIViewController.m; sourceTree = "<group>"; };
+		EACBC3651501193100A42720 /* ParentUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParentUIViewController.xib; sourceTree = "<group>"; };
+		EACBC3701501376000A42720 /* ChildUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildUIViewController.h; sourceTree = "<group>"; };
+		EACBC3711501376000A42720 /* ChildUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildUIViewController.m; sourceTree = "<group>"; };
+		EACBC3721501376000A42720 /* ChildUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildUIViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,9 @@
 				EACBC35B1501190100A42720 /* Ex07AppDelegate.h */,
 				EACBC35C1501190100A42720 /* Ex07AppDelegate.m */,
 				EACBC3531501190100A42720 /* Supporting Files */,
+				EACBC3631501193100A42720 /* ParentUIViewController.h */,
+				EACBC3641501193100A42720 /* ParentUIViewController.m */,
+				EACBC3651501193100A42720 /* ParentUIViewController.xib */,
 			);
 			path = Excercise07;
 			sourceTree = "<group>";
@@ -86,6 +99,9 @@
 				EACBC3551501190100A42720 /* InfoPlist.strings */,
 				EACBC3581501190100A42720 /* main.m */,
 				EACBC35A1501190100A42720 /* Excercise07-Prefix.pch */,
+				EACBC3701501376000A42720 /* ChildUIViewController.h */,
+				EACBC3711501376000A42720 /* ChildUIViewController.m */,
+				EACBC3721501376000A42720 /* ChildUIViewController.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EACBC3571501190100A42720 /* InfoPlist.strings in Resources */,
+				EACBC3671501193100A42720 /* ParentUIViewController.xib in Resources */,
+				EACBC3741501376000A42720 /* ChildUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +171,8 @@
 			files = (
 				EACBC3591501190100A42720 /* main.m in Sources */,
 				EACBC35D1501190100A42720 /* Ex07AppDelegate.m in Sources */,
+				EACBC3661501193100A42720 /* ParentUIViewController.m in Sources */,
+				EACBC3731501376000A42720 /* ChildUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +274,7 @@
 				EACBC3621501190100A42720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
